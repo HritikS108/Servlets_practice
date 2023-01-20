@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+ <servlet>
+  <servlet-name>MyServlet</servlet-name>
+  <servlet-class>MyServlet</servlet-class>
+  <init-param>
+   <param-name>url</param-name>
+   <param-value>jdbc:odbc:sri</param-value>
+  </init-param>
+  <init-param>
+   <param-name>user</param-name>
+   <param-value>system</param-value>
+  </init-param>
+  <init-param>
+   <param-name>password</param-name>
+   <param-value>servlet</param-value>
+  </init-param>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>MyServlet</servlet-name>
+  <url-pattern>/config</url-pattern>
+ </servlet-mapping>
+</web-app>
